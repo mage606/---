@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4301FDE18AB6F690053AF87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4301FDD18AB6F690053AF87 /* Foundation.framework */; };
+		E4301FE018AB6F690053AF87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4301FDF18AB6F690053AF87 /* CoreGraphics.framework */; };
+		E4301FE218AB6F690053AF87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4301FE118AB6F690053AF87 /* UIKit.framework */; };
+		E4301FE818AB6F690053AF87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4301FE618AB6F690053AF87 /* InfoPlist.strings */; };
+		E4301FEA18AB6F690053AF87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4301FE918AB6F690053AF87 /* main.m */; };
+		E4301FEE18AB6F690053AF87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4301FED18AB6F690053AF87 /* AppDelegate.m */; };
+		E4301FF018AB6F690053AF87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4301FEF18AB6F690053AF87 /* Images.xcassets */; };
+		E4301FF718AB6F690053AF87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4301FF618AB6F690053AF87 /* XCTest.framework */; };
+		E4301FF818AB6F690053AF87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4301FDD18AB6F690053AF87 /* Foundation.framework */; };
+		E4301FF918AB6F690053AF87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4301FE118AB6F690053AF87 /* UIKit.framework */; };
+		E430200118AB6F690053AF87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4301FFF18AB6F690053AF87 /* InfoPlist.strings */; };
+		E430200318AB6F690053AF87 /* Valentine_s_Day__To__YouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E430200218AB6F690053AF87 /* Valentine_s_Day__To__YouTests.m */; };
+		E430200E18AB6F7A0053AF87 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E430200D18AB6F7A0053AF87 /* MainViewController.m */; };
+		E430201018AB74500053AF87 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E430200F18AB74500053AF87 /* QuartzCore.framework */; };
+		E43E2D8618ADB3DE00D47A33 /* 16.gif in Resources */ = {isa = PBXBuildFile; fileRef = E43E2D8018ADB3DE00D47A33 /* 16.gif */; };
+		E43E2D8718ADB3DE00D47A33 /* 17.gif in Resources */ = {isa = PBXBuildFile; fileRef = E43E2D8118ADB3DE00D47A33 /* 17.gif */; };
+		E43E2D8818ADB3DE00D47A33 /* 18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43E2D8218ADB3DE00D47A33 /* 18.jpg */; };
+		E43E2D8918ADB3DE00D47A33 /* 19.gif in Resources */ = {isa = PBXBuildFile; fileRef = E43E2D8318ADB3DE00D47A33 /* 19.gif */; };
+		E43E2D8A18ADB3DE00D47A33 /* 20.gif in Resources */ = {isa = PBXBuildFile; fileRef = E43E2D8418ADB3DE00D47A33 /* 20.gif */; };
+		E43E2D8B18ADB3DE00D47A33 /* 21.gif in Resources */ = {isa = PBXBuildFile; fileRef = E43E2D8518ADB3DE00D47A33 /* 21.gif */; };
+		E43E2D8E18ADB70600D47A33 /* SixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43E2D8D18ADB70600D47A33 /* SixthViewController.m */; };
+		E446470C18AC58E5000F236C /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E446470B18AC58E5000F236C /* SubViewController.m */; };
+		E446471418AC6484000F236C /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446471318AC6484000F236C /* 4.gif */; };
+		E446471718AC65E9000F236C /* 5.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446471518AC65E9000F236C /* 5.gif */; };
+		E446471818AC65E9000F236C /* 6.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446471618AC65E9000F236C /* 6.gif */; };
+		E446471B18AC67EC000F236C /* 7.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446471918AC67EC000F236C /* 7.gif */; };
+		E446471C18AC67EC000F236C /* 8.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446471A18AC67EC000F236C /* 8.gif */; };
+		E446471E18AC6E4D000F236C /* 9.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446471D18AC6E4D000F236C /* 9.gif */; };
+		E446472018AC6F94000F236C /* 10.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446471F18AC6F94000F236C /* 10.gif */; };
+		E446472318AC721A000F236C /* 11.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446472118AC721A000F236C /* 11.gif */; };
+		E446472418AC721A000F236C /* 12.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446472218AC721A000F236C /* 12.gif */; };
+		E446472718AC7327000F236C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E446472618AC7327000F236C /* ThirdViewController.m */; };
+		E446472918AC7750000F236C /* 13.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446472818AC7750000F236C /* 13.gif */; };
+		E446472C18AC8A6E000F236C /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E446472B18AC8A6E000F236C /* FourthViewController.m */; };
+		E446472F18AC986E000F236C /* HSCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E446472E18AC986E000F236C /* HSCButton.m */; };
+		E446473118AC9B42000F236C /* 14.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446473018AC9B42000F236C /* 14.gif */; };
+		E446473318ACA366000F236C /* 123.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E446473218ACA366000F236C /* 123.mp3 */; };
+		E446473518ACA3C6000F236C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E446473418ACA3C6000F236C /* AVFoundation.framework */; };
+		E446473718ACA8B8000F236C /* Language.plist in Resources */ = {isa = PBXBuildFile; fileRef = E446473618ACA8B8000F236C /* Language.plist */; };
+		E446473918ACB6C1000F236C /* 15.gif in Resources */ = {isa = PBXBuildFile; fileRef = E446473818ACB6C1000F236C /* 15.gif */; };
+		E446473C18ACBB90000F236C /* FirthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E446473B18ACBB90000F236C /* FirthViewController.m */; };
+		F7937C6018ABA49F005FB7D0 /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = F7937C5F18ABA49F005FB7D0 /* 2.gif */; };
+		F7937C6418ABAC56005FB7D0 /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = F7937C6318ABAC56005FB7D0 /* 3.gif */; };
+		F7937C6618ABB310005FB7D0 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7937C6518ABB310005FB7D0 /* 1.jpg */; };
+		F79817CA18AD08E2002BCF4E /* 小柯、叶蓓 - 我们好像在哪见过-酷音铃声.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F79817C918AD08E2002BCF4E /* 小柯、叶蓓 - 我们好像在哪见过-酷音铃声.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4301FFA18AB6F690053AF87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4301FD218AB6F690053AF87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4301FD918AB6F690053AF87;
+			remoteInfo = "Valentine’s Day  To  You";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4301FDA18AB6F690053AF87 /* ValentinesDayToYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValentinesDayToYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4301FDD18AB6F690053AF87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E4301FDF18AB6F690053AF87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E4301FE118AB6F690053AF87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E4301FE518AB6F690053AF87 /* ValentinesDayToYou-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ValentinesDayToYou-Info.plist"; sourceTree = "<group>"; };
+		E4301FE718AB6F690053AF87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4301FE918AB6F690053AF87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4301FEB18AB6F690053AF87 /* ValentinesDayToYou-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ValentinesDayToYou-Prefix.pch"; sourceTree = "<group>"; };
+		E4301FEC18AB6F690053AF87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4301FED18AB6F690053AF87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4301FEF18AB6F690053AF87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E4301FF518AB6F690053AF87 /* ValentinesDayToYouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValentinesDayToYouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4301FF618AB6F690053AF87 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E4301FFE18AB6F690053AF87 /* ValentinesDayToYouTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ValentinesDayToYouTests-Info.plist"; sourceTree = "<group>"; };
+		E430200018AB6F690053AF87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E430200218AB6F690053AF87 /* Valentine_s_Day__To__YouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Valentine_s_Day__To__YouTests.m; sourceTree = "<group>"; };
+		E430200C18AB6F7A0053AF87 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E430200D18AB6F7A0053AF87 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E430200F18AB74500053AF87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E43E2D8018ADB3DE00D47A33 /* 16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 16.gif; sourceTree = "<group>"; };
+		E43E2D8118ADB3DE00D47A33 /* 17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 17.gif; sourceTree = "<group>"; };
+		E43E2D8218ADB3DE00D47A33 /* 18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 18.jpg; sourceTree = "<group>"; };
+		E43E2D8318ADB3DE00D47A33 /* 19.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 19.gif; sourceTree = "<group>"; };
+		E43E2D8418ADB3DE00D47A33 /* 20.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 20.gif; sourceTree = "<group>"; };
+		E43E2D8518ADB3DE00D47A33 /* 21.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 21.gif; sourceTree = "<group>"; };
+		E43E2D8C18ADB70600D47A33 /* SixthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixthViewController.h; sourceTree = "<group>"; };
+		E43E2D8D18ADB70600D47A33 /* SixthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixthViewController.m; sourceTree = "<group>"; };
+		E446470A18AC58E5000F236C /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		E446470B18AC58E5000F236C /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		E446471318AC6484000F236C /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
+		E446471518AC65E9000F236C /* 5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 5.gif; sourceTree = "<group>"; };
+		E446471618AC65E9000F236C /* 6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 6.gif; sourceTree = "<group>"; };
+		E446471918AC67EC000F236C /* 7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 7.gif; sourceTree = "<group>"; };
+		E446471A18AC67EC000F236C /* 8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 8.gif; sourceTree = "<group>"; };
+		E446471D18AC6E4D000F236C /* 9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 9.gif; sourceTree = "<group>"; };
+		E446471F18AC6F94000F236C /* 10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10.gif; sourceTree = "<group>"; };
+		E446472118AC721A000F236C /* 11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11.gif; sourceTree = "<group>"; };
+		E446472218AC721A000F236C /* 12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 12.gif; sourceTree = "<group>"; };
+		E446472518AC7327000F236C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		E446472618AC7327000F236C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		E446472818AC7750000F236C /* 13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 13.gif; sourceTree = "<group>"; };
+		E446472A18AC8A6E000F236C /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		E446472B18AC8A6E000F236C /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		E446472D18AC986E000F236C /* HSCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCButton.h; sourceTree = "<group>"; };
+		E446472E18AC986E000F236C /* HSCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCButton.m; sourceTree = "<group>"; };
+		E446473018AC9B42000F236C /* 14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 14.gif; sourceTree = "<group>"; };
+		E446473218ACA366000F236C /* 123.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 123.mp3; sourceTree = SOURCE_ROOT; };
+		E446473418ACA3C6000F236C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E446473618ACA8B8000F236C /* Language.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Language.plist; sourceTree = SOURCE_ROOT; };
+		E446473818ACB6C1000F236C /* 15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 15.gif; sourceTree = "<group>"; };
+		E446473A18ACBB90000F236C /* FirthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirthViewController.h; sourceTree = "<group>"; };
+		E446473B18ACBB90000F236C /* FirthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirthViewController.m; sourceTree = "<group>"; };
+		F7937C5F18ABA49F005FB7D0 /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
+		F7937C6318ABAC56005FB7D0 /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
+		F7937C6518ABB310005FB7D0 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F79817C918AD08E2002BCF4E /* 小柯、叶蓓 - 我们好像在哪见过-酷音铃声.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "小柯、叶蓓 - 我们好像在哪见过-酷音铃声.mp3"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4301FD718AB6F690053AF87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E446473518ACA3C6000F236C /* AVFoundation.framework in Frameworks */,
+				E430201018AB74500053AF87 /* QuartzCore.framework in Frameworks */,
+				E4301FE018AB6F690053AF87 /* CoreGraphics.framework in Frameworks */,
+				E4301FE218AB6F690053AF87 /* UIKit.framework in Frameworks */,
+				E4301FDE18AB6F690053AF87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4301FF218AB6F690053AF87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4301FF718AB6F690053AF87 /* XCTest.framework in Frameworks */,
+				E4301FF918AB6F690053AF87 /* UIKit.framework in Frameworks */,
+				E4301FF818AB6F690053AF87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4301FD118AB6F690053AF87 = {
+			isa = PBXGroup;
+			children = (
+				E4301FE318AB6F690053AF87 /* Valentine’s Day  To  You */,
+				E4301FFC18AB6F690053AF87 /* Valentine’s Day  To  YouTests */,
+				E4301FDC18AB6F690053AF87 /* Frameworks */,
+				E4301FDB18AB6F690053AF87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4301FDB18AB6F690053AF87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4301FDA18AB6F690053AF87 /* ValentinesDayToYou.app */,
+				E4301FF518AB6F690053AF87 /* ValentinesDayToYouTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4301FDC18AB6F690053AF87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E446473418ACA3C6000F236C /* AVFoundation.framework */,
+				E430200F18AB74500053AF87 /* QuartzCore.framework */,
+				E4301FDD18AB6F690053AF87 /* Foundation.framework */,
+				E4301FDF18AB6F690053AF87 /* CoreGraphics.framework */,
+				E4301FE118AB6F690053AF87 /* UIKit.framework */,
+				E4301FF618AB6F690053AF87 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4301FE318AB6F690053AF87 /* Valentine’s Day  To  You */ = {
+			isa = PBXGroup;
+			children = (
+				F79817C918AD08E2002BCF4E /* 小柯、叶蓓 - 我们好像在哪见过-酷音铃声.mp3 */,
+				E446473618ACA8B8000F236C /* Language.plist */,
+				E446473218ACA366000F236C /* 123.mp3 */,
+				E4301FEC18AB6F690053AF87 /* AppDelegate.h */,
+				E4301FED18AB6F690053AF87 /* AppDelegate.m */,
+				E430200C18AB6F7A0053AF87 /* MainViewController.h */,
+				E430200D18AB6F7A0053AF87 /* MainViewController.m */,
+				E446470A18AC58E5000F236C /* SubViewController.h */,
+				E446470B18AC58E5000F236C /* SubViewController.m */,
+				E446472518AC7327000F236C /* ThirdViewController.h */,
+				E446472618AC7327000F236C /* ThirdViewController.m */,
+				E446472A18AC8A6E000F236C /* FourthViewController.h */,
+				E446472B18AC8A6E000F236C /* FourthViewController.m */,
+				E446473A18ACBB90000F236C /* FirthViewController.h */,
+				E446473B18ACBB90000F236C /* FirthViewController.m */,
+				E43E2D8C18ADB70600D47A33 /* SixthViewController.h */,
+				E43E2D8D18ADB70600D47A33 /* SixthViewController.m */,
+				E446472D18AC986E000F236C /* HSCButton.h */,
+				E446472E18AC986E000F236C /* HSCButton.m */,
+				F7937C5E18ABA487005FB7D0 /* image */,
+				E4301FEF18AB6F690053AF87 /* Images.xcassets */,
+				E4301FE418AB6F690053AF87 /* Supporting Files */,
+			);
+			path = "Valentine’s Day  To  You";
+			sourceTree = "<group>";
+		};
+		E4301FE418AB6F690053AF87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4301FE518AB6F690053AF87 /* ValentinesDayToYou-Info.plist */,
+				E4301FE618AB6F690053AF87 /* InfoPlist.strings */,
+				E4301FE918AB6F690053AF87 /* main.m */,
+				E4301FEB18AB6F690053AF87 /* ValentinesDayToYou-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4301FFC18AB6F690053AF87 /* Valentine’s Day  To  YouTests */ = {
+			isa = PBXGroup;
+			children = (
+				E430200218AB6F690053AF87 /* Valentine_s_Day__To__YouTests.m */,
+				E4301FFD18AB6F690053AF87 /* Supporting Files */,
+			);
+			path = "Valentine’s Day  To  YouTests";
+			sourceTree = "<group>";
+		};
+		E4301FFD18AB6F690053AF87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4301FFE18AB6F690053AF87 /* ValentinesDayToYouTests-Info.plist */,
+				E4301FFF18AB6F690053AF87 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7937C5E18ABA487005FB7D0 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				E43E2D8018ADB3DE00D47A33 /* 16.gif */,
+				E43E2D8118ADB3DE00D47A33 /* 17.gif */,
+				E43E2D8218ADB3DE00D47A33 /* 18.jpg */,
+				E43E2D8318ADB3DE00D47A33 /* 19.gif */,
+				E43E2D8418ADB3DE00D47A33 /* 20.gif */,
+				E43E2D8518ADB3DE00D47A33 /* 21.gif */,
+				E446473818ACB6C1000F236C /* 15.gif */,
+				E446473018AC9B42000F236C /* 14.gif */,
+				E446472818AC7750000F236C /* 13.gif */,
+				E446472118AC721A000F236C /* 11.gif */,
+				E446472218AC721A000F236C /* 12.gif */,
+				E446471F18AC6F94000F236C /* 10.gif */,
+				E446471D18AC6E4D000F236C /* 9.gif */,
+				E446471918AC67EC000F236C /* 7.gif */,
+				E446471A18AC67EC000F236C /* 8.gif */,
+				E446471518AC65E9000F236C /* 5.gif */,
+				E446471618AC65E9000F236C /* 6.gif */,
+				E446471318AC6484000F236C /* 4.gif */,
+				F7937C6518ABB310005FB7D0 /* 1.jpg */,
+				F7937C6318ABAC56005FB7D0 /* 3.gif */,
+				F7937C5F18ABA49F005FB7D0 /* 2.gif */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4301FD918AB6F690053AF87 /* ValentinesDayToYou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E430200618AB6F690053AF87 /* Build configuration list for PBXNativeTarget "ValentinesDayToYou" */;
+			buildPhases = (
+				E4301FD618AB6F690053AF87 /* Sources */,
+				E4301FD718AB6F690053AF87 /* Frameworks */,
+				E4301FD818AB6F690053AF87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ValentinesDayToYou;
+			productName = "Valentine’s Day  To  You";
+			productReference = E4301FDA18AB6F690053AF87 /* ValentinesDayToYou.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4301FF418AB6F690053AF87 /* ValentinesDayToYouTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E430200918AB6F690053AF87 /* Build configuration list for PBXNativeTarget "ValentinesDayToYouTests" */;
+			buildPhases = (
+				E4301FF118AB6F690053AF87 /* Sources */,
+				E4301FF218AB6F690053AF87 /* Frameworks */,
+				E4301FF318AB6F690053AF87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4301FFB18AB6F690053AF87 /* PBXTargetDependency */,
+			);
+			name = ValentinesDayToYouTests;
+			productName = "Valentine’s Day  To  YouTests";
+			productReference = E4301FF518AB6F690053AF87 /* ValentinesDayToYouTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4301FD218AB6F690053AF87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = yons;
+				TargetAttributes = {
+					E4301FF418AB6F690053AF87 = {
+						TestTargetID = E4301FD918AB6F690053AF87;
+					};
+				};
+			};
+			buildConfigurationList = E4301FD518AB6F690053AF87 /* Build configuration list for PBXProject "ValentinesDayToYou" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E4301FD118AB6F690053AF87;
+			productRefGroup = E4301FDB18AB6F690053AF87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4301FD918AB6F690053AF87 /* ValentinesDayToYou */,
+				E4301FF418AB6F690053AF87 /* ValentinesDayToYouTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4301FD818AB6F690053AF87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43E2D8A18ADB3DE00D47A33 /* 20.gif in Resources */,
+				E43E2D8818ADB3DE00D47A33 /* 18.jpg in Resources */,
+				E446473318ACA366000F236C /* 123.mp3 in Resources */,
+				E446472318AC721A000F236C /* 11.gif in Resources */,
+				E446473918ACB6C1000F236C /* 15.gif in Resources */,
+				E43E2D8918ADB3DE00D47A33 /* 19.gif in Resources */,
+				E446472018AC6F94000F236C /* 10.gif in Resources */,
+				E43E2D8718ADB3DE00D47A33 /* 17.gif in Resources */,
+				E446471C18AC67EC000F236C /* 8.gif in Resources */,
+				E446471818AC65E9000F236C /* 6.gif in Resources */,
+				E446473118AC9B42000F236C /* 14.gif in Resources */,
+				E4301FE818AB6F690053AF87 /* InfoPlist.strings in Resources */,
+				E446472418AC721A000F236C /* 12.gif in Resources */,
+				E43E2D8B18ADB3DE00D47A33 /* 21.gif in Resources */,
+				F79817CA18AD08E2002BCF4E /* 小柯、叶蓓 - 我们好像在哪见过-酷音铃声.mp3 in Resources */,
+				E446473718ACA8B8000F236C /* Language.plist in Resources */,
+				E4301FF018AB6F690053AF87 /* Images.xcassets in Resources */,
+				F7937C6618ABB310005FB7D0 /* 1.jpg in Resources */,
+				E43E2D8618ADB3DE00D47A33 /* 16.gif in Resources */,
+				E446471E18AC6E4D000F236C /* 9.gif in Resources */,
+				F7937C6018ABA49F005FB7D0 /* 2.gif in Resources */,
+				E446471B18AC67EC000F236C /* 7.gif in Resources */,
+				F7937C6418ABAC56005FB7D0 /* 3.gif in Resources */,
+				E446471718AC65E9000F236C /* 5.gif in Resources */,
+				E446472918AC7750000F236C /* 13.gif in Resources */,
+				E446471418AC6484000F236C /* 4.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4301FF318AB6F690053AF87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E430200118AB6F690053AF87 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4301FD618AB6F690053AF87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E446472C18AC8A6E000F236C /* FourthViewController.m in Sources */,
+				E4301FEE18AB6F690053AF87 /* AppDelegate.m in Sources */,
+				E446472F18AC986E000F236C /* HSCButton.m in Sources */,
+				E446472718AC7327000F236C /* ThirdViewController.m in Sources */,
+				E446473C18ACBB90000F236C /* FirthViewController.m in Sources */,
+				E43E2D8E18ADB70600D47A33 /* SixthViewController.m in Sources */,
+				E430200E18AB6F7A0053AF87 /* MainViewController.m in Sources */,
+				E4301FEA18AB6F690053AF87 /* main.m in Sources */,
+				E446470C18AC58E5000F236C /* SubViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4301FF118AB6F690053AF87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E430200318AB6F690053AF87 /* Valentine_s_Day__To__YouTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4301FFB18AB6F690053AF87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4301FD918AB6F690053AF87 /* ValentinesDayToYou */;
+			targetProxy = E4301FFA18AB6F690053AF87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4301FE618AB6F690053AF87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4301FE718AB6F690053AF87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E4301FFF18AB6F690053AF87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E430200018AB6F690053AF87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E430200418AB6F690053AF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E430200518AB6F690053AF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E430200718AB6F690053AF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Valentine’s Day  To  You/ValentinesDayToYou-Prefix.pch";
+				INFOPLIST_FILE = "Valentine’s Day  To  You/ValentinesDayToYou-Info.plist";
+				PRODUCT_NAME = ValentinesDayToYou;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E430200818AB6F690053AF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Valentine’s Day  To  You/ValentinesDayToYou-Prefix.pch";
+				INFOPLIST_FILE = "Valentine’s Day  To  You/ValentinesDayToYou-Info.plist";
+				PRODUCT_NAME = ValentinesDayToYou;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E430200A18AB6F690053AF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Valentine’s Day  To  You.app/Valentine’s Day  To  You";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Valentine’s Day  To  You/Valentine’s Day  To  You-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Valentine’s Day  To  YouTests/ValentinesDayToYouTests-Info.plist";
+				PRODUCT_NAME = ValentinesDayToYouTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E430200B18AB6F690053AF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Valentine’s Day  To  You.app/Valentine’s Day  To  You";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Valentine’s Day  To  You/Valentine’s Day  To  You-Prefix.pch";
+				INFOPLIST_FILE = "Valentine’s Day  To  YouTests/ValentinesDayToYouTests-Info.plist";
+				PRODUCT_NAME = ValentinesDayToYouTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4301FD518AB6F690053AF87 /* Build configuration list for PBXProject "ValentinesDayToYou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E430200418AB6F690053AF87 /* Debug */,
+				E430200518AB6F690053AF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E430200618AB6F690053AF87 /* Build configuration list for PBXNativeTarget "ValentinesDayToYou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E430200718AB6F690053AF87 /* Debug */,
+				E430200818AB6F690053AF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E430200918AB6F690053AF87 /* Build configuration list for PBXNativeTarget "ValentinesDayToYouTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E430200A18AB6F690053AF87 /* Debug */,
+				E430200B18AB6F690053AF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4301FD218AB6F690053AF87 /* Project object */;
+}
